@@ -1,0 +1,115 @@
+<head>
+  <title>Whimsicals</title>
+  <link rel = "stylesheet" href ="assets/css/style.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav Bar -->
+<nav>
+  <a href="index.html"><img src="bbb.png" class="logo" alt="Logo" /></a>
+  <h1 class="whimsicals-title">Whimsicals</h1>
+  <ul>
+    <li><a href="best.html">Best Sellers</a></li>
+    <li><a href="eyes.html">Eyes</a></li>
+    <li><a href="lips.html">Lips</a></li>
+    <li><a href="cheeks.html">Cheeks</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="cart.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l1 8h13l1-8h4" />
+        <path d="M6 8h15l-1.68 8.39a2 2 0 0 1-1.98 1.61H7.68a2 2 0 0 1-1.98-1.61L6 8z" />
+      </svg>
+    </a></li>
+    <li><a href="#" id="profile-icon" onclick="toggleModal()">👤</a></li>
+  </ul>
+</nav>
+
+<!-- Auth Modal -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="toggleModal()">×</span>
+    <h2>Login & Sign Up</h2>
+
+    <!-- Login Section -->
+    <div class="auth-box" id="login-section">
+      <h3>Log In</h3>
+      <form>
+        <input id="login-email" type="email" placeholder="email address" required />
+        <input id="login-password" type="password" placeholder="password" required />
+        <button type="submit" class="auth-btn" onclick="switchToSignUp()">Log In</button>
+      </form>
+      <a class="forgot-password" onclick="showForgotPassword()">Forgot your password?</a>
+      <p>Don't have an account? <span class="switch-link" onclick="switchToSignUp()">Sign Up</span></p>
+    </div>
+
+    <!-- Forgot Password Section -->
+    <div class="auth-box" id="forgot-password-section" style="display:none;">
+      <h3>Reset Password</h3>
+      <form>
+        <input id="reset-email" type="email" placeholder="email address" required />
+        <button type="submit" class="auth-btn">Send Reset Link</button>
+      </form>
+      <p><span class="switch-link" onclick="switchToSignUp()">Back to Log In</span></p>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="auth-box" id="signup-section" style="display:none;">
+      <h3>Sign Up</h3>
+      <form>
+        <input id="signup-username" type="text" placeholder="user name" required />
+        <input id="signup-email" type="email" placeholder="email address" required />
+        <input id="signup-password" type="password" placeholder="create password" required />
+        <button type="submit" class="auth-btn">Register</button>
+      </form>
+      <p>Already have an account? <span class="switch-link" onclick="switchToLogin()">Log In</span></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+    <b> .<b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b> <b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b> <b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b></b>
+  </marquee>
+</footer>
+
+<script>
+  function toggleModal() {
+    const modal = document.getElementById('auth-modal');
+    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+  }
+
+  function showForgotPassword() {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'block';
+  }
+
+  function switchToLogin() {
+    document.getElementById('signup-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'none';
+    document.getElementById('login-section').style.display = 'block';
+  }
+
+  function switchToSignUp() {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'none';
+    document.getElementById('signup-section').style.display = 'block';
+  }
+
+  // Close modal on outside click
+  window.onclick = function(event) {
+    const modal = document.getElementById('auth-modal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

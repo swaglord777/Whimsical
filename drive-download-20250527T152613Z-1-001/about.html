@@ -1,0 +1,170 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsicals</title>
+  <link rel = "stylesheet" href ="assets/css/style.css" type="text/css"/>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="index.html"><img src="assets/img/bbb.png" class="logo" alt="Logo"></a>
+  <h1 class="whimsicals-title">whimsicals</h1>
+  <ul>
+    <li><a href="best.html">best sellers</a></li>
+    <li><a href="eyes.html">eyes</a></li>
+    <li><a href="lips.html">lips</a></li>
+    <li><a href="cheeks.html">cheeks</a></li>
+    <li><a href="about.html">about us</a></li>
+    <li><a href="cart.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l1 8h13l1-8h4" />
+        <path d="M6 8h15l-1.68 8.39a2 2 0 0 1-1.98 1.61H7.68a2 2 0 0 1-1.98-1.61L6 8z" />
+      </svg>
+    </a></li>
+    <li><a href="#" id="profile-icon" onclick="toggleModal()">👤</a></li>
+  </ul>
+</nav>
+
+<!-- Modal -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="toggleModal()">×</span>
+    <h2>Login & Sign Up</h2>
+
+    <!-- Login Section -->
+    <div class="auth-box" id="login-section">
+      <h3>Log In</h3>
+      <form>
+        <input id="login-email" type="email" placeholder="email address" required />
+        <input id="login-password" type="password" placeholder="password" required />
+        <button type="submit" class="auth-btn">Log In</button>
+      </form>
+      <a class="forgot-password" onclick="showForgotPassword()">Forgot your password?</a>
+      <p>Don't have an account? <span class="switch-link" onclick="switchToSignUp()">Sign Up</span></p>
+    </div>
+
+    <!-- Forgot Password Section -->
+    <div class="auth-box" id="forgot-password-section" style="display:none;">
+      <h3>Reset Password</h3>
+      <form>
+        <input id="reset-email" type="email" placeholder="email address" required />
+        <button type="submit" class="auth-btn">Send Reset Link</button>
+      </form>
+      <p><span class="switch-link" onclick="switchToLogin()">Back to Log In</span></p>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="auth-box" id="signup-section" style="display:none;">
+      <h3>Sign Up</h3>
+      <form>
+        <input id="signup-username" type="text" placeholder="user name" required />
+        <input id="signup-email" type="email" placeholder="email address" required />
+        <input id="signup-password" type="password" placeholder="create password" required />
+        <button type="submit" class="auth-btn">Register</button>
+      </form>
+      <p>Already have an account? <span class="switch-link" onclick="switchToLogin()">Log In</span></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- About Us Section -->
+<section class="about">
+    <h1 class="tagline">݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊˖ </h1>
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p style="text-align: justify;">Whimsicals was born from a vision—to create a beauty brand that goes beyond the ordinary, inspiring self-expression, creativity, and confidence. Founded by passionate dreamers, we believe that beauty is not just about appearance; it’s about embracing your individuality and finding magic in who you are. Every product we create is designed to spark joy, unlock imagination, and help you embrace the inner fairy within you. Whether through bold colors, ethereal shimmers, or delicate touches of elegance, Whimsicals is here to celebrate your uniqueness. Our products are designed to inspire, to enchant, and to remind you that beauty is not just about how you look—it’s about how you feel. So step into a world where makeup is a spell, and you are the enchantress. Your fairytale starts here.</p>
+        </div>
+        <div class="about-image">
+            <img src="assets/img/founder.jpg" alt="Founder">
+        </div>
+    </div>
+
+    <div class="about-content">
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p style="font-size: 18px; text-align: justify;">We believe beauty should be enchanting, accessible, and empowering. Our mission is to bring out your confidence through whimsical, high-quality, and sustainable cosmetics that allow you to express your unique magic.  We are here to break the boundaries of conventional beauty, celebrating individuality, inclusivity, and the freedom to be unapologetically you. Through our thoughtfully crafted products, we invite you to explore a world where self-love thrives, imagination knows no limits, and confidence shines as brightly as a fairy’s glow. Embrace the inner fairy within you—unleash your magic, shine unapologetically, and let your beauty be as limitless as your dreams.</p>
+        </div>
+
+        <div class="founder">
+            <h2>Meet the Founders</h2>
+            <p style="font-size: 18px; text-align: justify;">Whimsicals was born from a shared dream to create a world where beauty is not just seen but felt, where self-expression knows no limits, and where everyone can embrace the magic within. Founded by a team of passionate visionaries, each bringing their own artistry, creativity, and love for storytelling, Whimsicals is more than a brand—it’s a movement. With every product, every shade, and every detail, they have poured their hearts into crafting an experience that inspires confidence, individuality, and a touch of enchantment. Because at Whimsicals, beauty isn’t just about looking good—it’s about feeling like the most magical version of yourself.</p>
+        </div>
+
+
+
+        </div>
+    </div>
+</section>
+ <div>
+
+
+            <h2 style="text-align: center; display: block; font-size: 60px;">contact us!</h2>
+            <a href="https://instagram.com/swaglord.444" style="text-decoration: none; color: white; text-align: center; display: block; font-size: 25px;">whimsicals@gmail.com</a>
+
+
+ <div class="join">
+          <h1 style="color: white;"> join us! </h1>
+<form action="https://m.me/judeah.reynaldo.7">
+<label for="concerns"> email address: </label><br>
+<input type="text"> 
+<br>
+ </div>
+
+     
+<script>
+  // Modal Logic
+  function toggleModal() {
+    const modal = document.getElementById('auth-modal');
+    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+  }
+
+  function showForgotPassword() {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'block';
+  }
+
+  function switchToLogin() {
+    document.getElementById('signup-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'none';
+    document.getElementById('login-section').style.display = 'block';
+  }
+
+  function switchToSignUp() {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('forgot-password-section').style.display = 'none';
+    document.getElementById('signup-section').style.display = 'block';
+  }
+
+  window.onclick = function (event) {
+    const modal = document.getElementById('auth-modal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+</script>
+
+ 
+<div class="section">
+      	<footer>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+        <b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b> <b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b>   	<b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b>
+        </marquee>
+</footer>
+</div>
+
+</body>
+</html>
+
+

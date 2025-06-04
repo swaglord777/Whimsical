@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title> Whimsicals </title>
+  	<link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+<style>
+
+  #table {
+    padding-top: 50px;
+  }
+
+ .row {
+      margin-top: 100px;
+      display: flex;
+      margin-top: 100px;
+      font-weight: bold;
+      color:#5D4A5A;
+      background-color: #f0f0f089;
+  
+    }
+
+    .row2 {
+      display: flex;
+      font-weight: bold;
+    }
+    .column {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid rgb(181, 167, 186);
+      text-align: center;
+      background-color: #f0f0f03c;
+      align-content: center;
+    }
+
+    .adminz {
+      margin-top: 200px;
+      flex: 1;
+   max-width: 500px;
+   background: rgba(255, 255, 255, 0.1);
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   margin-left: 500px;
+   text-align: center;
+   margin-top: 200px;
+    }
+
+    .columnb {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-left: 120px;
+      height: 39px;
+    }
+
+#inputs {
+  margin-top:10px;
+}
+#inputs input {
+  height: 30px;
+  width: 300px;
+  background-color: rgba(216, 213, 213, 0.7) !important; /* Background visible */
+  color: white;
+  border: none;
+  display: inline-block; 
+}
+
+#inputs input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+#inputs label {
+font-weight: bold;
+}
+
+#inputsdesc  {
+  margin-top:10px;
+}
+
+#inputsdesc input {
+  height: 60px;
+  width: 300px;
+  background-color: rgba(216, 213, 213, 0.7) !important; /* Background visible */
+  color: white;
+  border: none;
+  display: inline-block; 
+}
+
+#inputsdesc input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-left: 15px;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  
+<nav>
+  <a href="index.html"><img src="assets/img/bbb.png" class="logo" alt="Logo"></a>
+  <h1 class="whimsicals-title">whimsicals</h1>
+  <ul>
+    <li><a href="best.html">best sellers</a></li>
+    <li><a href="eyes.html">eyes</a></li>
+    <li><a href="lips.html">lips</a></li>
+    <li><a href="cheeks.html">cheeks</a></li>
+    <li><a href="about.html">about us</a></li>
+    <li><a href="cart.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l1 8h13l1-8h4" />
+        <path d="M6 8h15l-1.68 8.39a2 2 0 0 1-1.98 1.61H7.68a2 2 0 0 1-1.98-1.61L6 8z" />
+      </svg>
+    </a></li>
+    <li><a href="#" id="profile-icon" onclick="toggleModal()">👤</a></li>
+  </ul>
+</nav>
+
+  <!--basta-->
+  
+  <div class="adminz">
+  <div id="inputs">
+    <h1 style="color: white;"> add a new product! </h1>
+<form action="eyes.html">
+<input type="text" placeholder="enter product name"> 
+</div>
+
+<div id="inputs">
+<form action="https://m.me/judeah.reynaldo.7">
+  <h1 style="color: white;"> enter product image </h1>
+<input type="file" placeholder="enter product image"> 
+</div>
+
+<div id="inputs">
+<form action="https://m.me/judeah.reynaldo.7">
+  <input type="text" placeholder="enter product rate"> 
+  </div>
+
+<div id="inputsdesc">
+<form action="https://m.me/judeah.reynaldo.7">
+<input type="text" placeholder="enter product description"> 
+</div>
+<button>add product</button>
+</div>
+
+
+<!--tablesss-->
+
+<div id="table">
+  <div class="row">
+    <div class="column"> product image </div>
+    <div class="column"> product name</div>
+    <div class="column">price</div>
+    <div class="column">action</div>
+  </div>
+
+  <div class="row2">
+    <div class="column"> <img src="assets/img/cupid.jpg" width="150" height="150" > </div>
+    <div class="column"> cupid </div>
+    <div class="column">₱400.00</div>
+    <div class="column"><button class="columnb">  <i class="fas fa-trash"></i>  delete</button>
+      <button class="columnb"><i class="far fa-edit"></i>update</button> </div>
+  </div>
+
+  <div class="row2">
+    <div class="column"> <img src="assets/img/pink.jpg" width="150" height="150" > </div>
+    <div class="column"> pink </div>
+    <div class="column">₱400.00</div>
+    <div class="column"><button class="columnb">  <i class="fas fa-trash"></i>  delete</button>
+      <button class="columnb"><i class="far fa-edit"></i>update</button> </div>
+  </div>
+
+  <div class="row2">
+    <div class="column"> <img src="assets/img/celestia.jpg" width="150" height="150" > </div>
+    <div class="column"> celestia</div>
+    <div class="column">₱400.00</div>
+    <div class="column"><button class="columnb">  <i class="fas fa-trash"></i>  delete</button>
+      <button class="columnb"><i class="far fa-edit"></i>update</button> </div>
+  </div>
+
+
+</div>
+
+ 
+<div class="section">
+      	<footer>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+        <b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b>	‎ ‎‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎  	<b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b> ‎ ‎ ‎ ‎ ‎ 	‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  	<b>   . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁  embrace the inner fairy within u . ݁₊ ⊹ . ݁˖ . ݁𓂃 ࣪˖ ཐིཋྀ ࣪˖  ݁𓂃. ݁₊ ⊹ . ݁˖ . ݁</b>
+        </marquee>
+
+</footer>
+</div>
+</body>
+</html>
